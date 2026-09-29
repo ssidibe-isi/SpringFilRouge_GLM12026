@@ -10,6 +10,10 @@ spring:
   jpa:
     hibernate:
       ddl-auto: ${ISI_DDL_AUTO:create}
+  profiles:
+    active: ${ISI_ACTIVE_PROFILE}
+    #active: prod, cloud, mysql
+    #active: dev, cloud, postsgres
 
 groupeisi:
   gl:
